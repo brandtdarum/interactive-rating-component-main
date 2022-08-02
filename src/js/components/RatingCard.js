@@ -6,8 +6,14 @@ const RatingCard = () => {
     const [rating, setRating] = useState(-1);
     const [hasSubmitted, setSubmit] = useState(false);
 
-    const clickRating = (element, rating) => {
-        console.log(element, rating);
+
+    const clickRating = (id) => {
+        //refList[rating].current.classList.add("selected")
+        if(rating !== -1)
+            document.querySelector("#button" + rating).classList.remove("selected");
+
+        setRating(id);
+        document.querySelector("#button" + id).classList.add("selected");
     }
 
     const ratingCard = (
@@ -17,7 +23,7 @@ const RatingCard = () => {
             <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
             <div className="rating_container">
                 {(new Array(5).fill(false)).map((e, i) => (
-                    <button id={"rating" + i} key = {i} onClick = {e => clickRating(e, i)}>{i+1}</button>
+                    <button id = {"button"+i} key = {i} onClick = {() => clickRating(i)}>{i+1}</button>
                 ))}
             </div>
             <button className = "submit_button" onClick = {() => setSubmit(true)}>Submit</button>

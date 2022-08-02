@@ -3,7 +3,7 @@
     border-radius: 20px;
     padding: 30px;
     max-width: 400px;
-    min-height: 350px;
+    min-height: 370px;
 
     background-color: get-neutral(4);
 
@@ -58,7 +58,7 @@
         transition: 0.1s ease-in-out;
     }
 
-    button:active {
+    button.selected {
         background-color: get-neutral(3);
         color: get-neutral(1);
         transition: 0.1s ease-in-out;
