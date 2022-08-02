@@ -2,6 +2,7 @@
 .card {
     border-radius: 20px;
     padding: 30px;
+    margin: 30px;
     max-width: 400px;
     min-height: 370px;
 
@@ -49,7 +50,7 @@
         border: 0;
         color: get-neutral(3);
         font-size: 16px;
-        transition: 0.1s ease-in-out;
+        transition: 0.2s ease-in-out;
     }
 
     button:hover {
@@ -74,6 +75,13 @@
     background-color: get-primary();
     color: get-neutral(1);
     font-size: 16px;
+    transition: 0.1s ease-in-out;
+}
+
+.submit_button:hover {
+    background-color: get-neutral(1);
+    color: get-primary();
+    transition: 0.1s ease-in-out;
 }
 
 .result {
