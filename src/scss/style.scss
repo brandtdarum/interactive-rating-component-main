@@ -1,7 +1,6 @@
 @import './components/reset';
 @import './components/functions';
 @import './components/Attribution.scss';
-@import './components/RatingCard.scss';
 
 
 body {
@@ -14,4 +13,10 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    font-family: get-font-family();
+    color: get-neutral(1);
 }
+
+
+@import './components/RatingCard.scss';

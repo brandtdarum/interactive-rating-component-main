@@ -61,10 +61,6 @@ The designs were created to the following widths:
   color: #3e52a3;
 }
 
-.card {
-  background-color: #252d37;
-}
-
 body {
   width: 100%;
   min-height: 100vh;
@@ -73,6 +69,84 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-family: "Overpass", sans-serif;
+  color: white;
+}
+
+.card {
+  border-radius: 20px;
+  padding: 30px;
+  max-width: 400px;
+  min-height: 350px;
+  background-color: #252d37;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  text-align: left;
+}
+.card p, .card .result {
+  margin: 0px;
+  color: #7c8798;
+  font-size: 15px;
+}
+
+.thankyou {
+  align-items: center;
+  text-align: center;
+}
+
+.star_container, .rating_container button {
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  background-color: rgba(124, 135, 152, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rating_container {
+  width: 100%;
+  margin: 20px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.rating_container button {
+  border: 0;
+  color: #7c8798;
+  font-size: 16px;
+  transition: 0.1s ease-in-out;
+}
+.rating_container button:hover {
+  background-color: #fb7413;
+  color: white;
+  transition: 0.1s ease-in-out;
+}
+.rating_container button:active {
+  background-color: #7c8798;
+  color: white;
+  transition: 0.1s ease-in-out;
+}
+
+.submit_button {
+  width: 100%;
+  height: 45px;
+  border: 0;
+  border-radius: 45px;
+  background-color: #fb7413;
+  color: white;
+  font-size: 16px;
+}
+
+.result {
+  padding: 5px 10px;
+  border-radius: 15px;
+  background-color: rgba(124, 135, 152, 0.1);
+}
+.result span {
+  color: #fb7413;
 }
 
 /*# sourceMappingURL=index.css.map */
