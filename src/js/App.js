@@ -1,10 +1,11 @@
-import logo from './../images/logo.svg';
 import './../css/App.css';
 import Attribution from './components/Attribution';
+import RatingCard from './components/RatingCard';
 
 function App() {
   return (
     <div className="App">
+      <RatingCard />
       <Attribution />
     </div>
   );
